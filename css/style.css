@@ -59,6 +59,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .logo {
@@ -119,5 +120,53 @@ nav {
 
 /* small dive or mobile */
 @media screen and (max-width: 576px){
-    
+    body {
+        max-width: 440px;
+        
+    }
+    /* shared section */
+    nav,
+    .pages>ul
+    {
+        flex-direction: column;
+    }
+    nav,
+    .banner .banner-container
+    {
+        text-align: center;
+    }
+    nav .pages li a,
+    .banner-description
+    {
+        font-size: 0.8rem;
+    }
+
+    /* navbar section */
+    nav .logo{
+        font-size: 1rem;
+    }
+
+    /* banner section */
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-img img{
+        width: 202px;
+        height: 190px;
+    }
+    .banner-title{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    body {
+        max-width: 800px;
+        
+    }
+    nav,
+    .banner
+    {
+        flex-direction: column;
+    }
 }
