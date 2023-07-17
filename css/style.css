@@ -115,6 +115,21 @@ nav {
 }
 
 
+/* more website section style */
+.sites{
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-image: linear-gradient(rgba(220, 220, 223, 0.1), rgba(238, 229, 229, 0.6), rgba(197, 195, 195, 0.1));
+}
+.sites div img{
+    margin-left: 55px;
+}
+
+
 
 /* responsive media query */
 
@@ -157,16 +172,34 @@ nav {
     .banner-title{
         font-size: 1.6rem;
     }
+    /* more website section */
+    .sites{
+        background-image: none;
+        padding: 20px;
+        text-align: center;
+    }
+    .sites div img{
+        margin-left: 25px;
+        width: 67px;
+        height: 15pxl
+    }
 }
 
+
+/* medium device or tablet */
 @media screen and (min-width: 576px) and (max-width: 992px){
     body {
-        max-width: 800px;
-        
+        max-width: 800px;   
     }
     nav,
     .banner
     {
         flex-direction: column;
+    }
+    .logo {
+        width: auto;
+    }
+    .banner-container{
+        text-align: center;
     }
 }
