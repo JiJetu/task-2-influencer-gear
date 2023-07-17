@@ -22,7 +22,8 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@600;700&display=swap');
 
 /* shared font size and color */
-.pages li  a, .banner-description {
+.pages li a,
+.banner-description {
     color: var(--primary-color);
     font-size: 1rem;
     font-weight: 600;
@@ -35,8 +36,9 @@ body {
     font-size: var(--primary-font-size);
     font-weight: 700;
 }
+
 /* primary button */
-.primary-btn{
+.primary-btn {
     background-color: #E02C6D;
     padding: 10px 24px;
     color: white;
@@ -82,8 +84,9 @@ nav {
     text-decoration: none;
 }
 
+
 /* banner section style */
-.banner{
+.banner {
     margin-top: 100px;
     display: flex;
     /* justify-content: space-around; */
@@ -96,27 +99,31 @@ nav {
     font-size: 3.3rem;
     font-weight: 700;
 }
-.banner-description{
+
+.banner-description {
     margin-top: 16px;
     margin-bottom: 16px;
 }
-.btn{
+
+.btn {
     border-radius: 41px;
 }
-.banner-img{
+
+.banner-img {
     background-image: url("../images/Circle\ design.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top right;
 }
-.banner-img img{
+
+.banner-img img {
     width: 440px;
     height: 414px;
 }
 
 
 /* more website section style */
-.sites{
+.sites {
     max-width: 1110px;
     margin: 0 auto;
     display: flex;
@@ -125,8 +132,41 @@ nav {
     padding: 40px;
     background-image: linear-gradient(rgba(220, 220, 223, 0.1), rgba(238, 229, 229, 0.6), rgba(197, 195, 195, 0.1));
 }
-.sites div img{
+
+.sites div img {
     margin-left: 55px;
+}
+
+/* Featured products section */
+.featured {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    max-width: 1110px;
+    margin: 100px auto;
+}
+.featured-container{
+    
+}
+
+.featured-title {
+    color: #0A0826;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.featured-description {
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.featured img {
+    width: 404px;
+    height: 270px;
 }
 
 
@@ -134,51 +174,55 @@ nav {
 /* responsive media query */
 
 /* small dive or mobile */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
     body {
         max-width: 440px;
-        
+
     }
+
     /* shared section */
     nav,
-    .pages>ul
-    {
+    .pages>ul {
         flex-direction: column;
     }
+
     nav,
-    .banner .banner-container
-    {
+    .banner .banner-container {
         text-align: center;
     }
+
     nav .pages li a,
-    .banner-description
-    {
+    .banner-description {
         font-size: 0.8rem;
     }
 
     /* navbar section */
-    nav .logo{
+    nav .logo {
         font-size: 1rem;
     }
 
     /* banner section */
-    .banner{
+    .banner {
         flex-direction: column-reverse;
     }
-    .banner-img img{
+
+    .banner-img img {
         width: 202px;
         height: 190px;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 1.6rem;
     }
+
     /* more website section */
-    .sites{
+    .sites {
         background-image: none;
         padding: 20px;
         text-align: center;
     }
-    .sites div img{
+
+    .sites div img {
         margin-left: 25px;
         width: 67px;
         height: 15pxl
@@ -187,19 +231,21 @@ nav {
 
 
 /* medium device or tablet */
-@media screen and (min-width: 576px) and (max-width: 992px){
+@media screen and (min-width: 576px) and (max-width: 992px) {
     body {
-        max-width: 800px;   
+        max-width: 800px;
     }
+
     nav,
-    .banner
-    {
+    .banner {
         flex-direction: column;
     }
+
     .logo {
         width: auto;
     }
-    .banner-container{
+
+    .banner-container {
         text-align: center;
     }
 }
