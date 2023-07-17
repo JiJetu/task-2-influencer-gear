@@ -23,7 +23,8 @@ body {
 
 /* shared font size and color */
 .pages li a,
-.banner-description {
+.banner-description,
+.featured-description {
     color: var(--primary-color);
     font-size: 1rem;
     font-weight: 600;
@@ -31,7 +32,8 @@ body {
 
 
 /* primary text color */
-.primary-text {
+.primary-text,
+.footer-title {
     color: var(--primary-color);
     font-size: var(--primary-font-size);
     font-weight: 700;
@@ -146,9 +148,6 @@ nav {
     max-width: 1110px;
     margin: 100px auto;
 }
-.featured-container{
-    
-}
 
 .featured-title {
     color: #0A0826;
@@ -158,7 +157,6 @@ nav {
 
 .featured-description {
     color: #6C6C6C;
-    font-size: 16px;
     font-weight: 700;
     margin-top: 16px;
     margin-bottom: 16px;
@@ -168,6 +166,32 @@ nav {
     width: 404px;
     height: 270px;
 }
+
+
+/* footer section */
+
+footer {
+    background-color: #0A0826;
+    text-align: center;
+    padding: 50px 0px;
+}
+.footer-title{
+    color: white;
+}
+.footer-right {
+    color: #D9DBE1;
+    font-size: 14px;
+    font-weight: 700;
+    /* margin-top: 3px; */
+    margin-bottom: 17px;
+}
+.footer-icon a{
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+
 
 
 
@@ -187,7 +211,9 @@ nav {
     }
 
     nav,
-    .banner .banner-container {
+    .banner .banner-container,
+    .sites,
+    .featured {
         text-align: center;
     }
 
@@ -201,11 +227,12 @@ nav {
         font-size: 1rem;
     }
 
-    /* banner section */
-    .banner {
+    .banner,
+    .featured {
         flex-direction: column-reverse;
     }
 
+    /* banner section */
     .banner-img img {
         width: 202px;
         height: 190px;
@@ -219,13 +246,19 @@ nav {
     .sites {
         background-image: none;
         padding: 20px;
-        text-align: center;
     }
 
     .sites div img {
         margin-left: 25px;
         width: 67px;
         height: 15pxl
+    }
+
+    /* featured section */
+
+    .featured img {
+        width: 90%;
+        height: 188px;
     }
 }
 
@@ -247,5 +280,14 @@ nav {
 
     .banner-container {
         text-align: center;
+    }
+
+    .featured {
+        gap: 3rem;
+    }
+
+    .featured img {
+        width: 90%;
+        height: 188px;
     }
 }
